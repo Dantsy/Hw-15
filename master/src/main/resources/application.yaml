@@ -1,0 +1,20 @@
+server:
+  port: 8086
+  ssl:
+    enabled: true
+    key-store-type: PKCS12
+    key-store: classpath:localhost-certificate.p12
+    key-store-password: 654321
+    key-alias: OTUS
+  truststore:
+    store: classpath:truststore.p12
+    password: 654321
+
+service:
+  slave-service-test-port: 8086
+  slave-service-test-path: api/v1/getTestString
+
+
+logging:
+  level:
+    root: debug
