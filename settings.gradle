@@ -1,0 +1,3 @@
+rootProject.name = 'Hw-15'
+include 'master'
+include 'slave'
